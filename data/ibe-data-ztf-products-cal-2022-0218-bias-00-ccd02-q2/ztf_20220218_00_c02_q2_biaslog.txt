@@ -1,0 +1,220 @@
+Start time = Thu Feb 17 17:24:26 2022
+====================================================
+iam=stackedBias.pl
+version=1.0
+cvsversion=$Id: stackedBias.pl,v 1.25 2017/03/03 20:38:31 laher Exp $ 
+hostname=ztfops41
+PWD=/local/scr/pipe/p1/rc5
+PATH=/local/ztf_sw/180822/ext/conda/bin:/local/ztf_sw/180822/ext/conda/envs/py3/bin:/local/ztf_sw/180822/ext/bin:/usr/pgsql-9.6/bin:/local/ztf_sw/180822/ext/source/kafka/bin:/ztf/ops/sw/180822/ztf/bin:/local/ztf_sw/180822/ext/conda/bin:/local/ztf_sw/180822/ext/conda/envs/py3/bin:/local/ztf_sw/180822/ext/bin:/usr/pgsql-9.6/bin:/local/ztf_sw/180822/ext/source/kafka/bin:/ztf/ops/sw/180822/ztf/bin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+LD_LIBRARY_PATH=/usr/pgsql-9.6/lib:/ztf/ops/sw/180822/ztf/lib:/local/ztf_sw/180822/ext/lib:/usr/lib:/usr/local/lib:/usr/lib64:/usr/lib64/atlas
+WRAPPER_UTILS=/ztf/ops/sw/180822/ztf/src/pl/perl
+Database server=ztfdb1
+TARGETDB=ztf2
+SODB_ROLE=ztfOpsRole
+WRAPPER_VERBOSE=1
+ZTF_SW=/ztf/ops/sw/180822
+ZTF_ROOT=/ztf/ops
+ZTF_DEPOT=/ztf/depot
+ZTF_ARCHIVE_CAL=/ztf/archive/cal
+Night ID: nId=1874
+Readout-channel ID: rcId=5
+Pipeline ID: ppId=1
+CALHOURSBEFOREMIDNIGHT=12
+CALHOURSAFTERMIDNIGHT=12
+Connecting to database...
+Making SODB connection with role ztfOpsRole...
+Connected to SODB.
+
+Executing database stored function nightDate(nId=1874)...
+nightdate=2022-02-18
+Directory for storing output files in sandbox = /ztf/ops/realtime/rc05/20220218/calprod
+Directory for storing output files in archive = /ztf/archive/cal/2022/0218/bias/00/ccd02/q2
+Executing database stored function getRawImagesForCalibration( nId=1874, rcId=5, itId=3, hoursbeforemidnight=12, hoursaftermidnight=12)...
+Returned rows:
+i, rId, filename = 0, 18740568105, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218056806_000000_bi_c02_b_q2.fits
+i, rId, filename = 1, 18740565605, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218056551_000000_bi_c02_b_q2.fits
+i, rId, filename = 2, 18740563005, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218056296_000000_bi_c02_b_q2.fits
+i, rId, filename = 3, 18740560505, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218056042_000000_bi_c02_b_q2.fits
+i, rId, filename = 4, 18740557905, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218055787_000000_bi_c02_b_q2.fits
+i, rId, filename = 5, 18740555405, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218055532_000000_bi_c02_b_q2.fits
+i, rId, filename = 6, 18740552805, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218055278_000000_bi_c02_b_q2.fits
+i, rId, filename = 7, 18740550405, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218055023_000000_bi_c02_b_q2.fits
+i, rId, filename = 8, 18740547905, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218054769_000000_bi_c02_b_q2.fits
+i, rId, filename = 9, 18740545305, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218054514_000000_bi_c02_b_q2.fits
+i, rId, filename = 10, 18740542805, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218054259_000000_bi_c02_b_q2.fits
+i, rId, filename = 11, 18740540205, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218054016_000000_bi_c02_b_q2.fits
+i, rId, filename = 12, 18740537705, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218053762_000000_bi_c02_b_q2.fits
+i, rId, filename = 13, 18740535105, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218053507_000000_bi_c02_b_q2.fits
+i, rId, filename = 14, 18740532605, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218053252_000000_bi_c02_b_q2.fits
+i, rId, filename = 15, 18740530005, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218052998_000000_bi_c02_b_q2.fits
+i, rId, filename = 16, 18740527605, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218052743_000000_bi_c02_b_q2.fits
+i, rId, filename = 17, 18740525105, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218052488_000000_bi_c02_b_q2.fits
+i, rId, filename = 18, 18740522405, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218052234_000000_bi_c02_b_q2.fits
+i, rId, filename = 19, 18740519905, /ztf/ops/realtime/rc05/20220218/sciprod/fr000001-000050/ztf_20220218051979_000000_bi_c02_b_q2.fits
+Elapsed time for pipeline intialization (sec.) = 0
+Executing command=stack -i images.lst -s 2.5 -t 36 -a biasavg.fits -d ztf_20220218_00_c02_q2_biasstddev.fits -o ztf_20220218_00_c02_q2_bias.fits -u ztf_20220218_00_c02_q2_biasunc.fits -n ztf_20220218_00_c02_q2_biasnsamps.fits >& stack.out
+Returned code from stack -i images.lst -s 2.5 -t 36 -a biasavg.fits -d ztf_20220218_00_c02_q2_biasstddev.fits -o ztf_20220218_00_c02_q2_bias.fits -u ztf_20220218_00_c02_q2_biasunc.fits -n ztf_20220218_00_c02_q2_biasnsamps.fits >& stack.out execution = 0
+Status from stack -i images.lst -s 2.5 -t 36 -a biasavg.fits -d ztf_20220218_00_c02_q2_biasstddev.fits -o ztf_20220218_00_c02_q2_bias.fits -u ztf_20220218_00_c02_q2_biasunc.fits -n ztf_20220218_00_c02_q2_biasnsamps.fits >& stack.out execution = 0
+Listing of output from sub executeCommand=
+ stack, v. 1.10 by Russ Laher
+ 
+ Inputs:
+    Input list-of-images filename = images.lst
+    Output average FITS-image filename (before outlier rejection) = biasavg.fits
+    Output average FITS-image filename (before outlier rejection) = ztf_20220218_00_c02_q2_biasstddev.fits
+    Output mean FITS-image filename = ztf_20220218_00_c02_q2_bias.fits
+    Output mean-uncertainty FITS-image filename = ztf_20220218_00_c02_q2_biasunc.fits
+    Output number-of-samples FITS-image filename = ztf_20220218_00_c02_q2_biasnsamps.fits
+    Number of "sigmas" for outlier rejection = 2.500000
+    Number of processing threads = 36
+ 
+ 1645147466.189622 = 02-17-2022  17:24:26.189622
+ Reading header info...
+ Reading input images...
+ 1645147468.200447 = 02-17-2022  17:24:28.200447
+ ------------------------------------->Elapsed time (sec) = 2.010825
+ 1645147468.200481 = 02-17-2022  17:24:28.200481
+ Computing with 36 threads...
+ 1645147468.745064 = 02-17-2022  17:24:28.745064
+ ------------------------------------->Elapsed time (sec) = 0.544583
+ 1645147468.745090 = 02-17-2022  17:24:28.745090
+ Writing output mean image...
+ Writing output mean-uncertainty image...
+ Writing output number-of-samples image...
+ Writing output average image (before outlier rejection)...
+ Writing output standard-deviation image (before outlier rejection)...
+ 1645147469.042856 = 02-17-2022  17:24:29.042856
+ ------------------------------------->Elapsed time (sec) = 0.297766
+
+=========================================================================
+Elapsed time to generate stacked bias image (sec.) = 3
+Executing command=calimqa -i ztf_20220218_00_c02_q2_bias.fits -u ztf_20220218_00_c02_q2_biasunc.fits -t 36 >& calimqa.out
+Returned code from calimqa -i ztf_20220218_00_c02_q2_bias.fits -u ztf_20220218_00_c02_q2_biasunc.fits -t 36 >& calimqa.out execution = 0
+Status from calimqa -i ztf_20220218_00_c02_q2_bias.fits -u ztf_20220218_00_c02_q2_biasunc.fits -t 36 >& calimqa.out execution = 0
+Listing of output from sub executeCommand=
+ calimqa, v. 1.00 by Russ Laher
+ 
+ Inputs:
+    Input mean FITS image filename = ztf_20220218_00_c02_q2_bias.fits
+    Input mean-uncertainty FITS image filename = ztf_20220218_00_c02_q2_biasunc.fits
+    Number of processing threads = 36
+ 
+ 1645147469.055231 = 02-17-2022  17:24:29.055231
+ Reading header info...
+ Reading input mean FITS image...
+ Reading input mean-uncertainty FITS image...
+ Computing with 36 threads...
+ 1645147469.119599 = 02-17-2022  17:24:29.119599
+ ------------------------------------->Elapsed time (sec) = 0.064368
+ 1645147469.119623 = 02-17-2022  17:24:29.119623
+ First calimqaed row val = -1.078790
+ Last calimqaed row val = -0.372060
+ First calimqaed col val = 0.055522
+ Last calimqaed col val = -0.304115
+ 1645147469.154133 = 02-17-2022  17:24:29.154133
+ ------------------------------------->Elapsed time (sec) = 0.034510
+ 1645147469.154158 = 02-17-2022  17:24:29.154158
+ Computing mean image statistics...
+ \nframes = 20
+ \gmean = -0.634502
+ \gmedian = -0.667962
+ \gstddev = 0.565594
+ \gpctdif = 0.589277
+ \ngoodpix = 9461760
+ \nbadpix = 0
+ \averagemedrow = -0.668384
+ \stddevmedrow = 0.027656
+ \averagemedcol = -0.634822
+ \stddevmedcol = 0.431695
+ Computing mean-uncertainty image statistics...
+ \medstackpixunc = 0.322328
+ \numgoodpixunc = 9461760
+ \numbadpixunc = 0
+ 1645147469.827833 = 02-17-2022  17:24:29.827833
+ ------------------------------------->Elapsed time (sec) = 0.673675
+
+=========================================================================
+Elapsed time to compute QA (sec.) = 0
+Executing command=imageStatistics -i ztf_20220218_00_c02_q2_biasstddev.fits >& imageStatistics.out
+Returned code from imageStatistics -i ztf_20220218_00_c02_q2_biasstddev.fits >& imageStatistics.out execution = 0
+Status from imageStatistics -i ztf_20220218_00_c02_q2_biasstddev.fits >& imageStatistics.out execution = 0
+Listing of output from sub executeCommand=
+ imageStatistics, v. 1.0
+ 
+ Inputs:
+    Input FITS file = ztf_20220218_00_c02_q2_biasstddev.fits
+    Verbose switch = 0
+ 
+ Image average = 1.565147
+ Image median = 1.551940
+ Image sigma = 0.416623
+ Image scale = 0.257224
+ Image 15.9 percentile = 1.303646
+ Image 84.1 percentile = 1.818093
+ Image skew = 274.066137
+ Image kurtosis = 194440.073572
+ Image jarque-bera test = 1.490513e+16
+ Image number of good pixels = 9461760
+ Image number of NaNs = 0
+
+=========================================================================
+Executing command=maskNoisyPixels -f 20 -m 4 -s 10.86358 -d ztf_20220218_00_c02_q2_biasstddev.fits -o ztf_20220218_00_c02_q2_biascmask.fits >& maskNoisyPixels.out
+Returned code from maskNoisyPixels -f 20 -m 4 -s 10.86358 -d ztf_20220218_00_c02_q2_biasstddev.fits -o ztf_20220218_00_c02_q2_biascmask.fits >& maskNoisyPixels.out execution = 0
+Status from maskNoisyPixels -f 20 -m 4 -s 10.86358 -d ztf_20220218_00_c02_q2_biasstddev.fits -o ztf_20220218_00_c02_q2_biascmask.fits >& maskNoisyPixels.out execution = 0
+Listing of output from sub executeCommand=
+ maskNoisyPixels, v. 1.30 by Russ Laher
+ 
+ Inputs:
+    Input standard-deviation FITS-image filename = ztf_20220218_00_c02_q2_biasstddev.fits
+    Output cmask FITS-image filename = ztf_20220218_00_c02_q2_biascmask.fits
+    Noisy pixel threshold = 10.863580
+ Reading header info...
+ Reading uncertainty image...
+ Processing...
+ Writing output cmask image...
+
+=========================================================================
+Elapsed time to generate cmask image (sec.) = 1
+Executing command=hdrupdate ztf_20220218_00_c02_q2_bias.fits -a hdrupdate.dat >& hdrupdate.out
+Returned code from hdrupdate ztf_20220218_00_c02_q2_bias.fits -a hdrupdate.dat >& hdrupdate.out execution = 0
+Status from hdrupdate ztf_20220218_00_c02_q2_bias.fits -a hdrupdate.dat >& hdrupdate.out execution = 0
+No output from sub executeCommand.
+=========================================================================
+File to be stored (/ztf/archive/cal/2022/0218/bias/00/ccd02/q2): ztf_20220218_00_c02_q2_bias.fits ztf_20220218_00_c02_q2_biasunc.fits ztf_20220218_00_c02_q2_biascmask.fits
+File to be stored (/ztf/ops/realtime/rc05/20220218/calprod): ztf_20220218_00_c02_q2_biasnsamps.fits ztf_20220218_00_c02_q2_biasstddev.fits
+Copied ztf_20220218_00_c02_q2_biasnsamps.fits to /ztf/ops/realtime/rc05/20220218/calprod/ztf_20220218_00_c02_q2_biasnsamps.fits
+Copied ztf_20220218_00_c02_q2_biasstddev.fits to /ztf/ops/realtime/rc05/20220218/calprod/ztf_20220218_00_c02_q2_biasstddev.fits
+
+Populating CalFiles database record: calType=bias, startdate='2022-02-18', enddate=null, fId=null, rcId=5, dbfilename=/ztf/archive/cal/2022/0218/bias/00/ccd02/q2/ztf_20220218_00_c02_q2_bias.fits, checksum=bea1f01d4f8be77fac6bcd6e420fb68a, createdby=stackedBiases.pl, comment=Stacked bias image, dbstatus=1
+CalFiles record successfully added or updated: cId=187405002.
+CalAncilFile record successfully inserted or updated (/ztf/archive/cal/2022/0218/bias/00/ccd02/q2/ztf_20220218_00_c02_q2_biasunc.fits): uncCaId = 409884.
+CalAncilFile record successfully inserted or updated (/ztf/archive/cal/2022/0218/bias/00/ccd02/q2/ztf_20220218_00_c02_q2_biascmask.fits): cmaskCaId = 409886.
+Successfully registered CalImQA record for cId=187405002
+Elapsed time to store and DB register stacked bias image (sec.) = 1
+Executing database stored function getRawQAValues(rId=18740568105)...
+Executing database stored function getRawQAValues(rId=18740565605)...
+Executing database stored function getRawQAValues(rId=18740563005)...
+Executing database stored function getRawQAValues(rId=18740560505)...
+Executing database stored function getRawQAValues(rId=18740557905)...
+Executing database stored function getRawQAValues(rId=18740555405)...
+Executing database stored function getRawQAValues(rId=18740552805)...
+Executing database stored function getRawQAValues(rId=18740550405)...
+Executing database stored function getRawQAValues(rId=18740547905)...
+Executing database stored function getRawQAValues(rId=18740545305)...
+Executing database stored function getRawQAValues(rId=18740542805)...
+Executing database stored function getRawQAValues(rId=18740540205)...
+Executing database stored function getRawQAValues(rId=18740537705)...
+Executing database stored function getRawQAValues(rId=18740535105)...
+Executing database stored function getRawQAValues(rId=18740532605)...
+Executing database stored function getRawQAValues(rId=18740530005)...
+Executing database stored function getRawQAValues(rId=18740527605)...
+Executing database stored function getRawQAValues(rId=18740525105)...
+Executing database stored function getRawQAValues(rId=18740522405)...
+Executing database stored function getRawQAValues(rId=18740519905)...
+Executing database stored function getCalQAValues(cId=187405002)...
+====================================================
+End time = Thu Feb 17 17:24:31 2022
+Elapsed time (seconds) = 5
+Terminating normally (exitCode = 0).
+Note: The exitCode can be different if there is a problem storing the pipeline.log file.
+File to be stored (/ztf/archive/cal/2022/0218/bias/00/ccd02/q2): ztf_20220218_00_c02_q2_biaslog.txt
